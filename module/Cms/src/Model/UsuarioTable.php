@@ -21,8 +21,8 @@ class UsuarioTable
         $select = new Select();
         $select->from($this->tableGateway->getTable());
 
-        if (!empty($params['busca']))
-            $select->where("nome LIKE '%{$params['busca']}%'");
+        if (!empty($params['nome']))
+            $select->where("nome LIKE '%{$params['nome']}%'");
 
         $select->order('nome');
 

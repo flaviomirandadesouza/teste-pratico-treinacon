@@ -6,6 +6,7 @@ use Cms\Controller\AuthController;
 use Cms\Controller\Factory\AuthControllerFactory;
 use Cms\Controller\UsuarioController;
 use Cms\Service\Factory\AuthenticationServiceFactory;
+use Zend\Authentication\AuthenticationService;
 use Zend\Authentication\AuthenticationServiceInterface;
 use Zend\Db\Adapter\AdapterInterface;
 use Zend\Db\ResultSet\ResultSet;
@@ -31,7 +32,7 @@ class Module implements ConfigProviderInterface
                 $authService = $container->get(AuthenticationServiceInterface::class);
                 $routeName = $match->getMatchedRouteName();
 
-                $publicRoutes = ['autenticacao', 'recuperar-senha', 'redefinir-senha'];
+                $publicRoutes = ['autenticacao'];
 
                 if (in_array($routeName, $publicRoutes) || $authService->hasIdentity()) {
                     return;
@@ -45,6 +46,9 @@ class Module implements ConfigProviderInterface
     public function getServiceConfig()
     {
         return [
+            'aliases'   => array(
+                AuthenticationService::class => AuthenticationServiceInterface::class
+            ),
             'factories' => [
                 AuthenticationServiceInterface::class => AuthenticationServiceFactory::class,
                 Model\UsuarioTable::class             => function ($container) {

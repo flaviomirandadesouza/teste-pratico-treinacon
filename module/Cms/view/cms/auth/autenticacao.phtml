@@ -1,7 +1,7 @@
 <div class="card card-login mx-auto mt-5">
     <div class="card-header">Autenticação</div>
     <div class="card-body">
-        <form action="/autenticacao" onsubmit="return AUTH.autenticar(this)">
+        <form action="/" onsubmit="return AUTH.autenticar(this)">
             <div class="form-group">
                 <label for="exampleInputEmail1">Email</label>
                 <input class="form-control" name="email" type="email" aria-describedby="emailHelp">
@@ -12,8 +12,5 @@
             </div>
             <button type="submit" class="btn btn-primary btn-block">Login</button>
         </form>
-        <div class="text-center">
-            <a class="d-block small mt-3" href="<?= $this->url('recuperar-senha') ?>">Recuperar Senha</a>
-        </div>
     </div>
 </div>

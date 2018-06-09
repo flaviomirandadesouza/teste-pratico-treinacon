@@ -16,7 +16,7 @@ return [
             'autenticacao'    => [
                 'type'    => 'literal',
                 'options' => [
-                    'route'    => '/autenticacao',
+                    'route'    => '/',
                     'defaults' => [
                         'controller' => Controller\AuthController::class,
                         'action'     => 'autenticacao'
@@ -33,37 +33,6 @@ return [
                     ]
                 ]
             ],
-            'recuperar-senha' => [
-                'type'    => 'literal',
-                'options' => [
-                    'route'    => '/recuperar-senha',
-                    'defaults' => [
-                        'controller' => Controller\AuthController::class,
-                        'action'     => 'recuperarSenha'
-                    ]
-                ]
-            ],
-            'redefinir-senha' => [
-                'type'    => 'segment',
-                'options' => [
-                    'route'    => '/redefinir-senha/:teste',
-                    'defaults' => [
-                        'controller' => Controller\AuthController::class,
-                        'action'     => 'redefinirSenha'
-                    ]
-                ]
-            ],
-            'home-cms'        => [
-                'type'    => 'literal',
-                'options' => [
-                    'route'    => '/cms',
-                    'defaults' => [
-                        'controller' => Controller\IndexController::class,
-                        'action'     => 'index'
-                    ]
-                ]
-            ],
-
             'usuario' => [
                 'type'    => 'segment',
                 'options' => [

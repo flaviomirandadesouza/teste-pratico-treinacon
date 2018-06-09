@@ -28,7 +28,7 @@ class AuthController extends AbstractActionController
     {
 
         if ($this->authService->hasIdentity()) {
-            $this->redirect()->toRoute('home-cms');
+            $this->redirect()->toRoute('usuario');
         }
 
         if ($this->getRequest()->isPost()) {

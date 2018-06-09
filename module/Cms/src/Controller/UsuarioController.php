@@ -2,28 +2,44 @@
 
 namespace Cms\Controller;
 
+use Cms\Form\UsuarioBuscaForm;
 use Cms\Form\UsuarioForm;
 use Cms\Model\Usuario;
 use Cms\Model\UsuarioTable;
 use Zend\Mvc\Controller\AbstractActionController;
-use Zend\View\Model\JsonModel;
 use Zend\View\Model\ViewModel;
 
 class UsuarioController extends AbstractActionController
 {
 
     private $table;
+    private $view;
+    private $model;
+    private $form;
+    private $formBusca;
 
     public function __construct(UsuarioTable $table)
     {
         $this->table = $table;
+        $this->view = new ViewModel();
+        $this->form = new UsuarioForm();
+        $this->formBusca = new UsuarioBuscaForm();
+        $this->model = new Usuario();
+        if ($this->getRequest()->isPost())
+            $this->view->setTerminal(TRUE);
+
     }
 
     public function listagemAction()
     {
-        $view = new ViewModel(['lista' => $this->table->fetchAll($_GET)]);
-        $view->setTemplate('cms/usuario/index');
-        return $view;
+
+        $this->model->exchangeArray($this->params()->fromQuery());
+        $this->formBusca->bind($this->model);
+        $this->view->setVariable('form', $this->formBusca);
+        $this->view->setVariable('lista', $this->table->fetchAll($this->params()->fromQuery()));
+        $this->view->setVariable('params', $this->params()->fromQuery());
+        $this->view->setTemplate('cms/usuario/index');
+        return $this->view;
     }
 
     public function cadastrarAction()
@@ -31,9 +47,9 @@ class UsuarioController extends AbstractActionController
         if ($this->getRequest()->isPost()) {
             $this->salvar();
         } else {
-            $view = new ViewModel(['form' => new UsuarioForm('usuario', [])]);
-            $view->setTemplate('cms/usuario/form');
-            return $view;
+            $this->view->setVariable('form', new UsuarioForm());
+            $this->view->setTemplate('cms/usuario/form');
+            return $this->view;
         }
 
     }
@@ -45,12 +61,11 @@ class UsuarioController extends AbstractActionController
         } else {
 
             $id = $this->params()->fromRoute('id');
-            $usuario = $this->table->find($id);
-            $form = new UsuarioForm('usuario', []);
-            $form->bind($usuario);
-            $view = new ViewModel(['form' => $form]);
-            $view->setTemplate('cms/usuario/form');
-            return $view;
+            $this->form->bind($this->table->find($id));
+
+            $this->view->setVariable('form', $this->form);
+            $this->view->setTemplate('cms/usuario/form');
+            return $this->view;
         }
     }
 
@@ -58,9 +73,7 @@ class UsuarioController extends AbstractActionController
     {
         try {
             $request = $this->getRequest()->getPost()->toArray();
-            $usuario = new Usuario();
-            $usuario->exchangeArray($request);
-            $this->table->salvar($usuario);
+            $this->table->salvar($request);
             echo json_encode(['status' => TRUE, 'redirect' => '/usuario']);
         } catch (\Exception $e) {
             echo json_encode(['status' => FALSE, 'msg' => $e->getMessage()]);

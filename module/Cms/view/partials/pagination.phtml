@@ -1,16 +1,24 @@
+<?php $query = $this->query; ?>
 <div class="pagination pagination-centered pull-right">
-    <?php if (isset($this->previous)) { ?>
+    <?php if (isset($this->previous)) : ?>
+        <?php $query['pagina'] = $this->query['pagina'] - 1; ?>
+        <a href="<?php echo $this->url('usuario', ['action' => 'listagem'], ['query' => $query]); ?>"
+           class="btn btn-outline-primary">Anterior</a>
+    <?php endif; ?>
 
-        <a class="btn btn-outline-primary">Anterior</a>
-    <?php } ?>
     <?php foreach ($this->pagesInRange as $item): ?>
         <?php if ($this->current == $item): ?>
-            <a class="btn btn-outline-primary disabled" href="?pagina=<?php echo $item; ?>"><?php echo $item; ?></a>
+            <a class="btn btn-outline-primary disabled" href="javascript:;"><?php echo $item; ?></a>
         <?php else: ?>
-            <a class="btn btn-outline-primary" href="?pagina=<?php echo $item; ?>"><?php echo $item; ?></a>
+            <?php $query['pagina'] = $item; ?>
+            <a class="btn btn-outline-primary"
+               href="<?php echo $this->url('usuario', ['action' => 'listagem'], ['query' => $query]); ?>"><?php echo $item; ?></a>
         <?php endif; ?>
     <?php endforeach; ?>
-    <?php if (isset($this->next)) { ?>
-        <a class="btn btn-outline-primary" href="?pagina=<?php echo $this->next ?>">Próximo</a>
-    <?php } ?>
+
+    <?php if (isset($this->next)) : ?>
+        <?php $query['pagina'] = $this->query['pagina'] + 1; ?>
+        <a class="btn btn-outline-primary"
+           href="<?php echo $this->url('usuario', ['action' => 'listagem'], ['query' => $query]); ?>">Próximo</a>
+    <?php endif; ?>
 </div>

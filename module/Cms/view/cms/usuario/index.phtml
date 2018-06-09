@@ -1,11 +1,4 @@
 <?php $this->headTitle('Listagem de Usuários'); ?>
-
-
-<pre>
-    <?php
-    print_r($this->params()->fromQuery('busca'));
-    ?>
-</pre>
 <div class="card">
     <div class="card-header">
         <i class="fa fa-users"></i> Usuários
@@ -13,23 +6,25 @@
     <div class="card-body">
         <div class="table-responsive">
             <div id="dataTable_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4">
-                <form>
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <input class="form-control" placeholder="Buscar por nome.." name="busca">
-                        </div>
-                        <div class="col-lg-2">
-                            <button type="submit" class="btn btn-outline-primary btn-block">Buscar</button>
-                        </div>
-                        <div class="col-lg-6 text-right">
-                            <a href="<?php echo $this->url('usuario', ['action' => 'cadastrar']); ?>"
-                               class="btn btn-outline-success">
-                                <i class="fa fa-plus"></i> Adicionar
-                            </a>
-                        </div>
-
+                <?php $form->prepare(); ?>
+                <?php echo $this->form()->openTag($form); ?>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <?php echo $this->formElement($form->get('nome')); ?>
                     </div>
-                </form>
+                    <div class="col-lg-2">
+                        <button type="submit" class="btn btn-outline-primary btn-block">Buscar</button>
+                    </div>
+                    <div class="col-lg-6 text-right">
+                        <a href="<?php echo $this->url('usuario', ['action' => 'cadastrar']); ?>"
+                           class="btn btn-outline-success">
+                            <i class="fa fa-plus"></i> Adicionar
+                        </a>
+                    </div>
+
+                </div>
+
+                <?php echo $this->form()->closeTag($form); ?>
                 <div class="row">
                     <div class="col-sm-12">
                         <table class="table table-bordered table-sm" id="listagem">
@@ -44,7 +39,9 @@
                             <tbody>
                             <?php if (count($lista) <= 0): ?>
                                 <tr class="text-danger">
-                                    <th colspan="999">Nenhum registro encontrado.</th>
+                                    <th colspan="999">
+                                        <?php echo !isset($params['nome']) ? 'Nenhum registro encontrado.' : "Sua busca por \"{$params['nome']}\" não obteve resultado"; ?>
+                                    </th>
                                 </tr>
                             <?php endif; ?>
                             <?php foreach ($lista as $item): ?>
@@ -72,7 +69,7 @@
                 <div class="row">
 
                     <div class="col-md-12">
-                        <?php echo $this->paginationControl($lista, 'Sliding', 'partials/pagination.phtml'); ?>
+                        <?php echo $this->paginationControl($lista, 'Sliding', 'partials/pagination.phtml', ['query' => $params]); ?>
 
                     </div>
                 </div>
