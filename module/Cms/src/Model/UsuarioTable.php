@@ -24,6 +24,9 @@ class UsuarioTable
         if (!empty($params['nome']))
             $select->where("nome LIKE '%{$params['nome']}%'");
 
+        if (!empty($params['email']))
+            $select->where("email LIKE '%{$params['email']}%'");
+
         $select->order('nome');
 
         $adapter = new \Zend\Paginator\Adapter\DbSelect($select, $this->tableGateway->getAdapter());

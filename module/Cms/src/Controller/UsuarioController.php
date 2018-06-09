@@ -58,6 +58,9 @@ class UsuarioController extends AbstractActionController
         } else {
 
             $id = $this->params()->fromRoute('id');
+            if ($id == 1)
+                $this->redirect()->toRoute('usuario');
+
             $this->form->bind($this->table->find($id));
 
             $this->view->setVariable('form', $this->form);
@@ -74,9 +77,21 @@ class UsuarioController extends AbstractActionController
         if (empty($this->model->email))
             throw new \Exception('O email é obrigatório');
 
-        if ((int)$this->model->id <= 0)
+        if ((int)$this->model->id <= 0) {
+
+            $usuario = $this->table->fetchAll(['email' => $this->model->email]);
+            if ((int)$usuario->id > 0)
+                throw new \Exception('Este e-mail já está em uso');
+
             if (empty($this->model->senha))
                 throw new \Exception('A senha é obrigatória');
+        } else {
+            $usuario = $this->table->find($this->model->id);
+            if ($usuario->email != $this->model->email)
+                throw new \Exception('Este e-mail não pertence a essa pessoa');
+
+        }
+
 
     }
 
@@ -99,6 +114,10 @@ class UsuarioController extends AbstractActionController
         $this->view->setTerminal(TRUE);
         try {
             $id = $this->params()->fromRoute('id');
+
+            if ($id == 1)
+                throw new \Exception('Você não pode excluir esse usuário!');
+
             $this->table->excluir($id);
             echo json_encode(['status' => TRUE, 'redirect' => '/usuario']);
         } catch (\Exception $e) {

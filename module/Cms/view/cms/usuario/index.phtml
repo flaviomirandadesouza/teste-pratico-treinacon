@@ -57,15 +57,17 @@
                                     <td><?php echo $item->nome; ?></td>
                                     <td><?php echo $item->email; ?></td>
                                     <td class="acoes">
-                                        <a href="<?= $this->url('usuario', ['action' => 'editar', 'id' => $item->id]) ?>"
-                                           class="btn btn-outline-primary" title="Editar Usuário">
-                                            <i class="fa fa-edit"></i>
-                                        </a>
-                                        <?php $url = $this->url('usuario', ['action' => 'excluir', 'id' => $item->id]); ?>
-                                        <a href="javascript:;" onclick="CRUD.excluir('<?php echo $url ?>')"
-                                           class="btn btn-outline-danger" title="Remover Usuário">
-                                            <i class="fa fa-trash"></i>
-                                        </a>
+                                        <?php if ($item->id > 1): ?>
+                                            <a href="<?= $this->url('usuario', ['action' => 'editar', 'id' => $item->id]) ?>"
+                                               class="btn btn-outline-primary" title="Editar Usuário">
+                                                <i class="fa fa-edit"></i>
+                                            </a>
+                                            <?php $url = $this->url('usuario', ['action' => 'excluir', 'id' => $item->id]); ?>
+                                            <a href="javascript:;" onclick="CRUD.excluir('<?php echo $url ?>')"
+                                               class="btn btn-outline-danger" title="Remover Usuário">
+                                                <i class="fa fa-trash"></i>
+                                            </a>
+                                        <?php endif; ?>
                                     </td>
                                 </tr>
                             <?php endforeach; ?>
