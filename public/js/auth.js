@@ -10,7 +10,11 @@ var AUTH = {
                     if (json.status) {
                         parent.location.href = json.redirect;
                     } else {
-                        alert(json.msg);
+                        swal({
+                            icon: 'error',
+                            text: json.msg,
+                            button: 'Ok'
+                        })
                     }
                 }
             }
