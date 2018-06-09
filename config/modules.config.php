@@ -13,6 +13,7 @@
 return [
     'Zend\Paginator',
     'Zend\Db',
+    'Zend\Mvc\Plugin\FlashMessenger',
     'Zend\Router',
     'Zend\Validator',
     'Application',
