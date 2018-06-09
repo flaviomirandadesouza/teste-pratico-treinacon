@@ -39,6 +39,7 @@ class AuthController extends AbstractActionController
             $result = $this->authService->authenticate();
 
             if ($result->isValid()) {
+                $this->flashMessenger()->addMessage('Seja bem vindo ao sistema!');
                 echo json_encode(['status' => TRUE, 'redirect' => '/usuario']);
             } else {
                 echo json_encode(['status' => FALSE, 'msg' => 'Usuário ou senha inválidos']);

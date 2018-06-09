@@ -111,6 +111,18 @@
     </div>
 
 </div>
+
+<script>
+    <?php $msg = $this->flashMessenger();?>
+    <?php if($msg->hasMessages()):?>
+    <?php $msg = $msg->getMessages(); ?>
+    swal({
+        icon: 'success',
+        text: '<?php echo current($msg);?>',
+        button: 'Ok'
+    })
+    <?php endif;?>
+</script>
 </body>
 
 </html>
