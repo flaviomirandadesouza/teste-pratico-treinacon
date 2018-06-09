@@ -21,7 +21,7 @@ class UsuarioController extends AbstractActionController
 
     public function listagemAction()
     {
-        $view = new ViewModel(['lista' => $this->table->fetchAll()]);
+        $view = new ViewModel(['lista' => $this->table->fetchAll($_GET)]);
         $view->setTemplate('cms/usuario/index');
         return $view;
     }

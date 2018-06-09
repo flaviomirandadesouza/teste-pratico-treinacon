@@ -22,7 +22,8 @@
         "zendframework/zend-mvc-console": "^1.1.10",
         "zendframework/zend-mvc-plugins": "^1.0.1",
         "zendframework/zend-session": "^2.7.1",
-        "zendframework/zend-authentication": "^2.6"
+        "zendframework/zend-authentication": "^2.6",
+        "zendframework/zend-paginator": "^2.8"
     },
     "autoload": {
         "psr-4": {

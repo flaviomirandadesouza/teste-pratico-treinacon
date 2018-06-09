@@ -2,6 +2,7 @@
 
 namespace Cms\Model;
 
+use Zend\Db\Sql\Select;
 use Zend\Db\TableGateway\TableGatewayInterface;
 
 class UsuarioTable
@@ -14,9 +15,23 @@ class UsuarioTable
         $this->tableGateway = $tableGateway;
     }
 
-    public function fetchAll()
+    public function fetchAll($params = [])
     {
-        return $this->tableGateway->select();
+
+        $select = new Select();
+        $select->from($this->tableGateway->getTable());
+
+        if (!empty($params['busca']))
+            $select->where("nome LIKE '%{$params['busca']}%'");
+
+        $select->order('nome');
+
+        $adapter = new \Zend\Paginator\Adapter\DbSelect($select, $this->tableGateway->getAdapter());
+        $paginator = new \Zend\Paginator\Paginator($adapter);
+        $paginator->setItemCountPerPage(1);
+        $paginator->setCurrentPageNumber(!empty($params['pagina']) ? $params['pagina'] : 1);
+
+        return $paginator;
     }
 
     public function findByPassword($password)

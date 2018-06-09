@@ -1,0 +1,16 @@
+<div class="pagination pagination-centered pull-right">
+    <?php if (isset($this->previous)) { ?>
+
+        <a class="btn btn-outline-primary">Anterior</a>
+    <?php } ?>
+    <?php foreach ($this->pagesInRange as $item): ?>
+        <?php if ($this->current == $item): ?>
+            <a class="btn btn-outline-primary disabled" href="?pagina=<?php echo $item; ?>"><?php echo $item; ?></a>
+        <?php else: ?>
+            <a class="btn btn-outline-primary" href="?pagina=<?php echo $item; ?>"><?php echo $item; ?></a>
+        <?php endif; ?>
+    <?php endforeach; ?>
+    <?php if (isset($this->next)) { ?>
+        <a class="btn btn-outline-primary" href="?pagina=<?php echo $this->next ?>">Próximo</a>
+    <?php } ?>
+</div>

@@ -68,6 +68,7 @@
       <path value="$PROJECT_DIR$/vendor/zendframework/zend-db" />
       <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
       <path value="$PROJECT_DIR$/vendor/zendframework/zend-dom" />
+      <path value="$PROJECT_DIR$/vendor/zendframework/zend-paginator" />
     </include_path>
   </component>
 </project>

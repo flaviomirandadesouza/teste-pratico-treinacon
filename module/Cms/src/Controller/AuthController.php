@@ -39,7 +39,7 @@ class AuthController extends AbstractActionController
             $result = $this->authService->authenticate();
 
             if ($result->isValid()) {
-                echo json_encode(['status' => TRUE, 'redirect' => '/cms']);
+                echo json_encode(['status' => TRUE, 'redirect' => '/usuario']);
             } else {
                 echo json_encode(['status' => FALSE, 'msg' => 'Usuário ou senha inválidos']);
             }
