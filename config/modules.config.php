@@ -12,6 +12,7 @@
  */
 return [
     'Zend\Paginator',
+    'Zend\Db',
     'Zend\Router',
     'Zend\Validator',
     'Application',

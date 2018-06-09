@@ -11,5 +11,12 @@
       <user-name>root</user-name>
       <introspection-schemas>*:treinacon</introspection-schemas>
     </data-source>
+    <data-source name="treinacon@vps65415.cloudpublic.com.br" uuid="db361ad9-f4b1-4a04-af67-16a519bfadb8">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <secret-storage>master_key</secret-storage>
+      <first-sync>true</first-sync>
+      <user-name>root</user-name>
+      <introspection-schemas>*:treinacon</introspection-schemas>
+    </data-source>
   </component>
 </project>
