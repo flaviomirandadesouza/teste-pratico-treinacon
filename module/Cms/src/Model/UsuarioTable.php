@@ -28,7 +28,7 @@ class UsuarioTable
 
         $adapter = new \Zend\Paginator\Adapter\DbSelect($select, $this->tableGateway->getAdapter());
         $paginator = new \Zend\Paginator\Paginator($adapter);
-        $paginator->setItemCountPerPage(1);
+        $paginator->setItemCountPerPage(15);
         $paginator->setCurrentPageNumber(!empty($params['pagina']) ? $params['pagina'] : 1);
 
         return $paginator;
@@ -67,8 +67,6 @@ class UsuarioTable
         if ($id === 0) {
             $data['salt'] = md5(date('Y-m-d H:i:s') . uniqid());
             $data['senha'] = md5($data['salt'] . $data['senha']);
-            $data['criado_em'] = date('Y-m-d H:i:s');
-            $data['criado_por'] = 1;
             $this->tableGateway->insert($this->limparCamposNulos($data));
             return;
         }
@@ -81,8 +79,6 @@ class UsuarioTable
             $data['salt'] = md5(date('Y-m-d H:i:s') . uniqid());
             $data['senha'] = md5($data['salt'] . $data['senha']);
         }
-        $data['modificado_em'] = date('Y-m-d H:i:s');
-        $data['modificado_por'] = 1;
         $this->tableGateway->update($this->limparCamposNulos($data), ['id' => $id]);
     }
 
