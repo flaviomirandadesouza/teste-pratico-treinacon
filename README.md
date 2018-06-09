@@ -55,19 +55,21 @@ Agora configure os dados de conexão com o banco de dados, para isso basta alter
     ),
 ```
 
-Por fim você precisa instalar os componentes necessários para o template sb-admin, para isso entre no diretório public/template/sb-admin e execute o comando abaixo
+Agora você precisa instalar os componentes necessários para o template sb-admin, para isso entre no diretório public/template/sb-admin e execute o comando abaixo
 
 ```bash
 npm i
 ```
+
+Por fim você precisa utilizar o gulp para copiar os arquivos da pasta node_modules para vendor, para isso utilize o comando abaixo:
+
+```bash
+gulp vendor
+```
+
 
 Se nada deu errado nos passos acima o sistema está pronto para ser executado, você pode executá-lo usando o comando abaixo 
 
 ```bash
 composer serve
 ```
-
-## Bibliotecas de terceiros utilizadas
-
-jQuery - https://jquery.com/
-Bootstrap - https://getbootstrap.com/
