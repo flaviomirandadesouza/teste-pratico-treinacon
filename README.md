@@ -11,9 +11,9 @@ Caso queira ver o projeto em execução, fiz o deploy da aplicação em um servi
 
 Host: http://vps65415.cloudpublic.com.br/
 
-User: usuario@gmail.com
+User: usuario@demo.com
 
-Pass: 123
+Pass: demo
 
 *POR SEGURANÇA O USUÁRIO ACIMA NÃO PODE SER REMOVIDO OU EDITADO.
 
@@ -36,7 +36,7 @@ CREATE TABLE treinacon.usuario (
    );
    
 INSERT INTO treinacon.usuario(nome, email, salt, senha)
-VALUES('Usuário', 'usuario@gmail.com', '202cb962ac59075b964b07152d234b70', 'babc156ac796828d0d08625f86f6dc55') 
+VALUES('Demo', 'usuario@demo.com', 'babc156ac796828d0d08625f86f6dc55', 'e002cd89ccdca7b518dd0293254071a2') 
 ```
 
 ## Instalação da Aplicação

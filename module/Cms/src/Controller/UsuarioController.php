@@ -123,5 +123,6 @@ class UsuarioController extends AbstractActionController
         } catch (\Exception $e) {
             echo json_encode(['status' => FALSE, 'msg' => $e->getMessage()]);
         }
+        die();
     }
 }

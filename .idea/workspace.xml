@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6620f992-97a3-47b1-b375-d9de8bb844d7" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change beforePath="$PROJECT_DIR$/module/Cms/src/Controller/UsuarioController.php" afterPath="$PROJECT_DIR$/module/Cms/src/Controller/UsuarioController.php" />
-      <change beforePath="$PROJECT_DIR$/module/Cms/src/Model/UsuarioTable.php" afterPath="$PROJECT_DIR$/module/Cms/src/Model/UsuarioTable.php" />
-      <change beforePath="$PROJECT_DIR$/module/Cms/view/cms/usuario/index.phtml" afterPath="$PROJECT_DIR$/module/Cms/view/cms/usuario/index.phtml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -79,7 +78,7 @@
         <entry file="file://$PROJECT_DIR$/module/Cms/src/Controller/AuthController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="132">
-              <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+              <caret line="47" column="9" lean-forward="false" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -100,9 +99,31 @@
       <file leaf-file-name="UsuarioController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/module/Cms/src/Controller/UsuarioController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="516">
-              <caret line="90" column="76" lean-forward="false" selection-start-line="90" selection-start-column="76" selection-end-line="90" selection-end-column="76" />
+            <state relative-caret-position="515">
+              <caret line="125" column="14" lean-forward="false" selection-start-line="125" selection-start-column="14" selection-end-line="125" selection-end-column="14" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="308">
+                <caret line="38" column="12" lean-forward="false" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="usuario" pinned="false" current-in-tab="false">
+        <entry file="das://table:/aeb500b2/db361ad9-f4b1-4a04-af67-16a519bfadb8/treinacon.usuario">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -188,9 +209,9 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/db361ad9-f4b1-4a04-af67-16a519bfadb8/console_1.sql" />
         <option value="$PROJECT_DIR$/public/js/auth.js" />
         <option value="$PROJECT_DIR$/config/modules.config.php" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/module/Cms/view/cms/usuario/index.phtml" />
         <option value="$PROJECT_DIR$/module/Cms/src/Model/UsuarioTable.php" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/module/Cms/src/Controller/UsuarioController.php" />
       </list>
     </option>
@@ -321,7 +342,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="SearchEverywhereHistoryKey" value="UsuarioCon&#9;FILE&#9;file:///var/www/html/treinacon-zf3/module/Cms/src/Controller/UsuarioController.php&#10;index&#9;FILE&#9;file:///var/www/html/treinacon-zf3/module/Cms/view/cms/usuario/index.phtml&#10;crud&#9;FILE&#9;file:///var/www/html/treinacon-zf3/public/js/crud.js&#10;auth&#9;FILE&#9;file:///var/www/html/treinacon-zf3/public/js/auth.js&#10;compos&#9;FILE&#9;file:///var/www/html/treinacon-zf3/composer.json&#10;Authentica&#9;FILE&#9;file:///var/www/html/treinacon-zf3/module/Cms/src/Service/Factory/AuthenticationServiceFactory.php&#10;UsuarioTab&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/src/Model/UsuarioTable.php&#10;Auth&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/src/Controller/AuthController.php&#10;form&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/view/cms/usuario/form.phtml&#10;UsuarioForm&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/src/Form/UsuarioForm.php&#10;cru&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/public/js/crud.js&#10;cms&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/view/layout/cms.phtml&#10;autenti&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/view/cms/auth/autenticacao.phtml&#10;autentica&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/view/cms/auth/autenticacao.phtml&#10;Module&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/src/Module.php&#10;pagina&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/view/partials/pagination.phtml&#10;inde&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/view/cms/usuario/index.phtml&#10;Usuario&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/src/Model/UsuarioTable.php&#10;auth.ph&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/view/layout/auth.phtml&#10;modu&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/config/module.config.php&#10;Modu&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/src/Module.php&#10;modul&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/config/module.config.php&#10;MOdu&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/src/Module.php&#10;UsuarioFOr&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/src/Form/UsuarioForm.php&#10;UsuarioFo&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/src/Form/UsuarioForm.php&#10;cms.ph&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/view/layout/cms.phtml&#10;READ&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/README.md&#10;AuthCon&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/src/Controller/AuthController.php&#10;composer.&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/composer.json" />
+    <property name="SearchEverywhereHistoryKey" value="READ&#9;FILE&#9;file:///var/www/html/treinacon-zf3/README.md&#10;UsuarioCon&#9;FILE&#9;file:///var/www/html/treinacon-zf3/module/Cms/src/Controller/UsuarioController.php&#10;index&#9;FILE&#9;file:///var/www/html/treinacon-zf3/module/Cms/view/cms/usuario/index.phtml&#10;crud&#9;FILE&#9;file:///var/www/html/treinacon-zf3/public/js/crud.js&#10;auth&#9;FILE&#9;file:///var/www/html/treinacon-zf3/public/js/auth.js&#10;compos&#9;FILE&#9;file:///var/www/html/treinacon-zf3/composer.json&#10;Authentica&#9;FILE&#9;file:///var/www/html/treinacon-zf3/module/Cms/src/Service/Factory/AuthenticationServiceFactory.php&#10;UsuarioTab&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/src/Model/UsuarioTable.php&#10;Auth&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/src/Controller/AuthController.php&#10;form&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/view/cms/usuario/form.phtml&#10;UsuarioForm&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/src/Form/UsuarioForm.php&#10;cru&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/public/js/crud.js&#10;cms&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/view/layout/cms.phtml&#10;autenti&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/view/cms/auth/autenticacao.phtml&#10;autentica&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/view/cms/auth/autenticacao.phtml&#10;Module&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/src/Module.php&#10;pagina&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/view/partials/pagination.phtml&#10;inde&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/view/cms/usuario/index.phtml&#10;Usuario&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/src/Model/UsuarioTable.php&#10;auth.ph&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/view/layout/auth.phtml&#10;modu&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/config/module.config.php&#10;Modu&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/src/Module.php&#10;modul&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/config/module.config.php&#10;MOdu&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/src/Module.php&#10;UsuarioFOr&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/src/Form/UsuarioForm.php&#10;UsuarioFo&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/src/Form/UsuarioForm.php&#10;cms.ph&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/view/layout/cms.phtml&#10;AuthCon&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/src/Controller/AuthController.php&#10;composer.&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/composer.json" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
   </component>
   <component name="RecentsManager">
@@ -367,12 +388,12 @@
       <updated>1528505822233</updated>
       <workItem from="1528505823658" duration="22885000" />
       <workItem from="1528533928047" duration="14485000" />
-      <workItem from="1528580222403" duration="5783000" />
+      <workItem from="1528580222403" duration="6020000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43153000" />
+    <option name="totallyTimeSpent" value="43390000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1366" y="-4" width="1920" height="1084" extended-state="6" />
@@ -734,28 +755,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/aeb500b2/db361ad9-f4b1-4a04-af67-16a519bfadb8/treinacon.usuario">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/aeb500b2/6941f680-da59-47e0-b436-86f4896e8ade/treinacon.usuario">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="352">
-            <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -778,7 +781,7 @@
     <entry file="file://$PROJECT_DIR$/module/Cms/src/Controller/AuthController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
-          <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+          <caret line="47" column="9" lean-forward="false" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -801,10 +804,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="308">
+            <caret line="38" column="12" lean-forward="false" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/aeb500b2/db361ad9-f4b1-4a04-af67-16a519bfadb8/treinacon.usuario">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/module/Cms/src/Controller/UsuarioController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="90" column="76" lean-forward="false" selection-start-line="90" selection-start-column="76" selection-end-line="90" selection-end-column="76" />
+        <state relative-caret-position="515">
+          <caret line="125" column="14" lean-forward="false" selection-start-line="125" selection-start-column="14" selection-end-line="125" selection-end-column="14" />
           <folding />
         </state>
       </provider>
