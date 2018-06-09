@@ -16,5 +16,22 @@ var AUTH = {
             }
         )
         return false;
+    },
+    sair: function () {
+        swal({
+            icon: 'warning',
+            text: "Você deseja realmente sair do sistema?",
+            buttons: {
+                cancel: "Não",
+                confirm: {
+                    text: 'Sim',
+                    value: true
+                }
+            },
+        }).then(function (value) {
+            if (value)
+                parent.location.href = '/sair';
+
+        })
     }
 }

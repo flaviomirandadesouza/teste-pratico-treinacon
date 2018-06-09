@@ -21,6 +21,8 @@
     <?= $this->headScript()
         ->prependFile($this->basePath(PATH_TEMPLATE . "vendor/jquery-easing/jquery.easing.min.js"))
         ->prependFile($this->basePath(PATH_TEMPLATE . "js/sb-admin.min.js"))
+        ->prependFile($this->basePath("libs/sweetalert.min.js"))
+        ->prependFile($this->basePath("js/auth.js"))
         ->prependFile($this->basePath("js/crud.js"))
         ->prependFile($this->basePath(PATH_TEMPLATE . "vendor/bootstrap/js/bootstrap.bundle.min.js"))
         ->prependFile($this->basePath(PATH_TEMPLATE . "vendor/jquery/jquery.min.js"))
@@ -55,7 +57,7 @@
                         <i class="fa fa-user-circle-o"></i> <?php echo $this->identity(); ?>
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="<?php echo $this->url('sair'); ?>">
+                        <a class="dropdown-item" href="javascript:;" onclick="AUTH.sair()">
                             <i class="fa fa-fw fa-sign-out"></i>Sair
                         </a>
                     </div>

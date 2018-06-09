@@ -17,6 +17,10 @@
                 <?php echo $this->formElement($form->get('email')); ?>
             </div>
             <div class="form-group col-3">
+                <?php
+                if ((int)$form->get('id')->getValue() <= 0)
+                    $form->get('senha')->setAttribute('required', TRUE);
+                ?>
                 <?php echo $this->formLabel($form->get('senha')); ?>
                 <?php echo $this->formElement($form->get('senha')); ?>
             </div>

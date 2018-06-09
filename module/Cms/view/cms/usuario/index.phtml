@@ -15,7 +15,14 @@
                     <div class="col-lg-2">
                         <button type="submit" class="btn btn-outline-primary btn-block">Buscar</button>
                     </div>
-                    <div class="col-lg-6 text-right">
+                    <div class="col-lg-2">
+                        <?php if (!empty($params['nome'])): ?>
+                            <a href="<?php echo $this->url('usuario'); ?>" class="btn btn-outline-danger btn-block">
+                                Limpar Buscar
+                            </a>
+                        <?php endif; ?>
+                    </div>
+                    <div class="col-lg-4 text-right">
                         <a href="<?php echo $this->url('usuario', ['action' => 'cadastrar']); ?>"
                            class="btn btn-outline-success">
                             <i class="fa fa-plus"></i> Adicionar

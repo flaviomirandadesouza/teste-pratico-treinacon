@@ -25,9 +25,6 @@ class UsuarioController extends AbstractActionController
         $this->form = new UsuarioForm();
         $this->formBusca = new UsuarioBuscaForm();
         $this->model = new Usuario();
-        if ($this->getRequest()->isPost())
-            $this->view->setTerminal(TRUE);
-
     }
 
     public function listagemAction()
@@ -69,21 +66,37 @@ class UsuarioController extends AbstractActionController
         }
     }
 
+    public function validar()
+    {
+
+        if (empty($this->model->nome))
+            throw new \Exception('O nome é obrigatório');
+        if (empty($this->model->email))
+            throw new \Exception('O email é obrigatório');
+
+        if ((int)$this->model->id <= 0)
+            if (empty($this->model->senha))
+                throw new \Exception('A senha é obrigatória');
+
+    }
+
     public function salvar()
     {
+        $this->view->setTerminal(TRUE);
         try {
-            $request = $this->getRequest()->getPost()->toArray();
-            $this->table->salvar($request);
+            $this->model->exchangeArray($this->getRequest()->getPost()->toArray());
+            $this->validar();
+            $this->table->salvar($this->model);
             echo json_encode(['status' => TRUE, 'redirect' => '/usuario']);
         } catch (\Exception $e) {
             echo json_encode(['status' => FALSE, 'msg' => $e->getMessage()]);
         }
-
         die();
     }
 
     public function excluirAction()
     {
+        $this->view->setTerminal(TRUE);
         try {
             $id = $this->params()->fromRoute('id');
             $this->table->excluir($id);
@@ -91,6 +104,5 @@ class UsuarioController extends AbstractActionController
         } catch (\Exception $e) {
             echo json_encode(['status' => FALSE, 'msg' => $e->getMessage()]);
         }
-        die();
     }
 }

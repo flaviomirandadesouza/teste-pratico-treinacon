@@ -24,7 +24,8 @@ class UsuarioForm extends Form
             'name'       => 'nome',
             'type'       => 'text',
             'attributes' => [
-                'class' => 'form-control'
+                'class'    => 'form-control',
+                'required' => TRUE,
             ],
             'options'    => [
                 'label' => 'Nome'
@@ -33,9 +34,10 @@ class UsuarioForm extends Form
 
         $this->add([
             'name'       => 'email',
-            'type'       => 'text',
+            'type'       => 'email',
             'attributes' => [
-                'class' => 'form-control'
+                'class'    => 'form-control',
+                'required' => TRUE,
             ],
             'options'    => [
                 'label' => 'E-mail'
