@@ -50,16 +50,6 @@ class AuthController extends AbstractActionController
         return new ViewModel();
     }
 
-    public function recuperarSenhaAction()
-    {
-        return new ViewModel();
-    }
-
-    public function redefinirSenhaAction()
-    {
-        return new ViewModel();
-    }
-
     public function sairAction()
     {
         $this->authService->clearIdentity();
