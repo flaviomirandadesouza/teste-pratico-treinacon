@@ -27,6 +27,11 @@ class UsuarioController extends AbstractActionController
         $this->model = new Usuario();
     }
 
+    public function ajax()
+    {
+        $this->layout()->setTerminal(TRUE)->setTemplate('ajax/response');
+    }
+
     public function listagemAction()
     {
 
@@ -99,6 +104,7 @@ class UsuarioController extends AbstractActionController
 
     public function salvar()
     {
+
         $this->view->setTerminal(TRUE);
         try {
             $this->model->exchangeArray($this->getRequest()->getPost()->toArray());
@@ -113,7 +119,6 @@ class UsuarioController extends AbstractActionController
 
     public function excluirAction()
     {
-        $this->view->setTerminal(TRUE);
         try {
             $id = $this->params()->fromRoute('id');
 
