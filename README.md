@@ -1,21 +1,32 @@
-# ZendSkeletonApplication
 
-## Introduction
+# Teste Prático (TREINACON)
 
-This is a skeleton application using the Zend Framework MVC layer and module
-systems. This application is meant to be used as a starting place for those
-looking to get their feet wet with Zend Framework.
+## Introdução
 
-## Installation using Composer
+Neste projeto procuro aplicar conceitos que vão além do que simplesmente clonar o skeleton do zend e criar um CRUD, na qual implementei um template personalizado, criei um módulo novo para não trabalhar com o módulo padrão application, utilizei 3 layouts para diferenciar os conteúdos públicos, autenticação e privados e também trabalhei com diferentes tipos de rotas.
+## Banco de dados
 
-The easiest way to create a new Zend Framework project is to use
-[Composer](https://getcomposer.org/).  If you don't have it already installed,
-then please install as per the [documentation](https://getcomposer.org/doc/00-intro.md).
+Optei por usar MySQL por ser um banco bastante conhecido e também amplamente disponível até em hospedagens grátis.
 
-To create your new Zend Framework project:
+Segue o script para a criação do Banco e a tabela.
+```
+CREATE DATABASE treinacon;
 
-```bash
-$ composer create-project -sdev zendframework/skeleton-application path/to/install
+USE treinacon;
+
+CREATE TABLE treinacon.usuario (
+     id INT(11) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+     nome VARCHAR(100) NOT NULL,
+     email VARCHAR(100) NOT NULL,
+     salt VARCHAR(32),
+     senha VARCHAR(32),
+     hash VARCHAR(32),
+     criado_em DATETIME,
+     criado_por INT(11),
+     modificado_em DATETIME,
+     modificado_por INT(11)
+   );
+   
 ```
 
 Once installed, you can test it out immediately using PHP's built-in web server:
