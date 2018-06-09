@@ -19,13 +19,11 @@ class UsuarioTable
     {
 
         $select = new Select();
-        $select->from($this->tableGateway->getTable());
+        $select->from('usuario');
 
         if (!empty($params['nome']))
             $select->where("nome LIKE '%{$params['nome']}%'");
 
-        if (!empty($params['email']))
-            $select->where("email LIKE '%{$params['email']}%'");
 
         $select->order('nome');
 
@@ -35,6 +33,14 @@ class UsuarioTable
         $paginator->setCurrentPageNumber(!empty($params['pagina']) ? $params['pagina'] : 1);
 
         return $paginator;
+    }
+
+    public function findByEmail($email)
+    {
+        $rowset = $this->tableGateway->select(['email' => $email]);
+        $row = $rowset->current();
+
+        return $row;
     }
 
     public function findByPassword($password)

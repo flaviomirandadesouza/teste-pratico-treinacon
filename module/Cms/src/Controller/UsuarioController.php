@@ -78,9 +78,10 @@ class UsuarioController extends AbstractActionController
             throw new \Exception('O email é obrigatório');
 
         if ((int)$this->model->id <= 0) {
-            $usuario = $this->table->fetchAll(['email' => $this->model->email]);
+            $usuario = $this->table->findByEmail($this->model->email);
             if ((int)$usuario->id > 0)
                 throw new \Exception('Este e-mail já está em uso');
+
 
             if (empty($this->model->senha))
                 throw new \Exception('A senha é obrigatória');
