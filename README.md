@@ -5,6 +5,18 @@
 
 Este projeto consiste em um CRUD e autenticação de usuários usando o Zend Framework 3 assim como também pacotes fornecidos pela Zend como zend-authentication, zend-db entre outros.
 
+## Demo do projeto
+
+Caso queira ver o projeto em execução, fiz o deploy da aplicação em um servidor pessoal, utilize os dados abaixo para acessar:
+
+Host: http://vps65415.cloudpublic.com.br/
+
+User: usuario@gmail.com
+
+Pass: 123
+
+*POR SEGURANÇA O USUÁRIO ACIMA NÃO PODE SER REMOVIDO OU EDITADO.
+
 ## Banco de dados
 
 Optei por usar MySQL por ser um banco bastante conhecido e também amplamente disponível até em hospedagens grátis.
@@ -73,3 +85,4 @@ Se nada deu errado nos passos acima o sistema está pronto para ser executado, v
 ```bash
 composer serve
 ```
+
