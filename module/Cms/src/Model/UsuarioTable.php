@@ -19,6 +19,14 @@ class UsuarioTable
         return $this->tableGateway->select();
     }
 
+    public function findByPassword($password)
+    {
+        $rowset = $this->tableGateway->select(['senha' => $password]);
+        $row = $rowset->current();
+
+        return $row;
+    }
+
     public function find($id)
     {
         $id = (int)$id;

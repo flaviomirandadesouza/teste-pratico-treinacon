@@ -7,7 +7,6 @@ use Zend\ServiceManager\Factory\InvokableFactory;
 return [
     'controllers'  => [
         'factories' => [
-            Controller\AuthController::class  => InvokableFactory::class,
             Controller\IndexController::class => InvokableFactory::class,
 
         ]
@@ -21,6 +20,16 @@ return [
                     'defaults' => [
                         'controller' => Controller\AuthController::class,
                         'action'     => 'autenticacao'
+                    ]
+                ]
+            ],
+            'sair'    => [
+                'type'    => 'literal',
+                'options' => [
+                    'route'    => '/sair',
+                    'defaults' => [
+                        'controller' => Controller\AuthController::class,
+                        'action'     => 'sair'
                     ]
                 ]
             ],

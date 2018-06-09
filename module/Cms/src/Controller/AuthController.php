@@ -2,14 +2,21 @@
 
 namespace Cms\Controller;
 
+use Zend\Authentication\AuthenticationService;
+use Zend\Authentication\Adapter\DbTable\CallbackCheckAdapter;
+use Zend\Authentication\AuthenticationServiceInterface;
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\Mvc\MvcEvent;
-use Zend\Stdlib\RequestInterface as Request;
-use Zend\Stdlib\ResponseInterface as Response;
 use Zend\View\Model\ViewModel;
 
 class AuthController extends AbstractActionController
 {
+    private $authService;
+
+    public function __construct(AuthenticationServiceInterface $authService)
+    {
+        $this->authService = $authService;
+    }
 
     public function onDispatch(MvcEvent $e)
     {
@@ -19,6 +26,26 @@ class AuthController extends AbstractActionController
 
     public function autenticacaoAction()
     {
+
+        if ($this->authService->hasIdentity()) {
+            $this->redirect()->toRoute('home-cms');
+        }
+
+        if ($this->getRequest()->isPost()) {
+            $data = $this->params()->fromPost();
+            $authAdapter = $this->authService->getAdapter();
+            $authAdapter->setIdentity($data['email']);
+            $authAdapter->setCredential($data['senha']);
+            $result = $this->authService->authenticate();
+
+            if ($result->isValid()) {
+                echo json_encode(['status' => TRUE, 'redirect' => '/cms']);
+            } else {
+                echo json_encode(['status' => FALSE, 'msg' => 'Usuário ou senha inválidos']);
+            }
+            die();
+        }
+
         return new ViewModel();
     }
 
@@ -30,5 +57,11 @@ class AuthController extends AbstractActionController
     public function redefinirSenhaAction()
     {
         return new ViewModel();
+    }
+
+    public function sairAction()
+    {
+        $this->authService->clearIdentity();
+        $this->redirect()->toRoute('autenticacao');
     }
 }

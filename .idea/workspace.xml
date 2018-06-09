@@ -2,32 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6620f992-97a3-47b1-b375-d9de8bb844d7" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/module/Cms/src/Form/UsuarioForm.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/module/Cms/src/Model/Usuario.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/module/Cms/src/Model/UsuarioTable.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/module/Cms/view/cms/auth/redefinir-senha.phtml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/module/Cms/view/error/404.phtml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/module/Cms/view/error/index.phtml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/module/Cms/view/layout/auth.phtml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/module/Cms/view/layout/cms.phtml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/cms.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/js/crud.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/module/Cms/src/Classe/AuthAdapter.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/module/Cms/src/Controller/Factory/AuthControllerFactory.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/module/Cms/src/Service/Factory/AuthenticationServiceFactory.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/js/auth.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/config/autoload/global.php" afterPath="$PROJECT_DIR$/config/autoload/global.php" />
-      <change beforePath="$PROJECT_DIR$/module/Application/src/Controller/IndexController.php" afterPath="$PROJECT_DIR$/module/Application/src/Controller/IndexController.php" />
-      <change beforePath="$PROJECT_DIR$/module/Application/view/layout/layout.phtml" afterPath="$PROJECT_DIR$/module/Application/view/layout/public.phtml" />
+      <change beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
       <change beforePath="$PROJECT_DIR$/module/Cms/config/module.config.php" afterPath="$PROJECT_DIR$/module/Cms/config/module.config.php" />
       <change beforePath="$PROJECT_DIR$/module/Cms/src/Controller/AuthController.php" afterPath="$PROJECT_DIR$/module/Cms/src/Controller/AuthController.php" />
-      <change beforePath="$PROJECT_DIR$/module/Cms/src/Controller/UsuarioController.php" afterPath="$PROJECT_DIR$/module/Cms/src/Controller/UsuarioController.php" />
+      <change beforePath="$PROJECT_DIR$/module/Cms/src/Model/UsuarioTable.php" afterPath="$PROJECT_DIR$/module/Cms/src/Model/UsuarioTable.php" />
       <change beforePath="$PROJECT_DIR$/module/Cms/src/Module.php" afterPath="$PROJECT_DIR$/module/Cms/src/Module.php" />
       <change beforePath="$PROJECT_DIR$/module/Cms/view/cms/auth/autenticacao.phtml" afterPath="$PROJECT_DIR$/module/Cms/view/cms/auth/autenticacao.phtml" />
-      <change beforePath="$PROJECT_DIR$/module/Cms/view/cms/auth/recuperar-senha.phtml" afterPath="$PROJECT_DIR$/module/Cms/view/cms/auth/recuperar-senha.phtml" />
-      <change beforePath="$PROJECT_DIR$/module/Cms/view/cms/auth/validar-recuperar-senha.phtml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/module/Cms/view/cms/usuario/form.phtml" afterPath="$PROJECT_DIR$/module/Cms/view/cms/usuario/form.phtml" />
-      <change beforePath="$PROJECT_DIR$/module/Cms/view/cms/usuario/index.phtml" afterPath="$PROJECT_DIR$/module/Cms/view/cms/usuario/index.phtml" />
-      <change beforePath="$PROJECT_DIR$/public/index.php" afterPath="$PROJECT_DIR$/public/index.php" />
+      <change beforePath="$PROJECT_DIR$/module/Cms/view/layout/auth.phtml" afterPath="$PROJECT_DIR$/module/Cms/view/layout/auth.phtml" />
+      <change beforePath="$PROJECT_DIR$/module/Cms/view/layout/cms.phtml" afterPath="$PROJECT_DIR$/module/Cms/view/layout/cms.phtml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -76,34 +64,66 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="crud.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/crud.js">
+      <file leaf-file-name="AuthController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/module/Cms/src/Controller/AuthController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="25" column="42" lean-forward="false" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="module.config.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Cms/config/module.config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="67" column="46" lean-forward="false" selection-start-line="67" selection-start-column="46" selection-end-line="67" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UsuarioController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/module/Cms/src/Controller/UsuarioController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="75" column="37" lean-forward="false" selection-start-line="75" selection-start-column="37" selection-end-line="75" selection-end-column="37" />
+            <state relative-caret-position="418">
+              <caret line="43" column="89" lean-forward="false" selection-start-line="43" selection-start-column="89" selection-end-line="43" selection-end-column="89" />
               <folding>
-                <element signature="e#34#59#0#PHP" expanded="true" />
+                <element signature="e#34#80#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="auth.phtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/Cms/view/layout/auth.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="19" column="49" lean-forward="false" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cms.phtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/Cms/view/layout/cms.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="57" column="52" lean-forward="false" selection-start-line="57" selection-start-column="52" selection-end-line="57" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Module.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/Cms/src/Module.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <folding>
+                <element signature="e#23#57#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="auth.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/auth.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" column="54" lean-forward="false" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="autenticacao.phtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/Cms/view/cms/auth/autenticacao.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="3" column="22" lean-forward="false" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -141,26 +161,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UsuarioForm.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Cms/src/Form/UsuarioForm.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="33" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UsuarioTable.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Cms/src/Model/UsuarioTable.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="49" column="19" lean-forward="false" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -176,6 +176,8 @@
       <find>search</find>
       <find>ErrorLog</find>
       <find>protected</find>
+      <find>auth</find>
+      <find>Loou</find>
     </findStrings>
     <replaceStrings>
       <replace>public</replace>
@@ -198,10 +200,8 @@
         <option value="$PROJECT_DIR$/module/Application/config/module.config.php" />
         <option value="$PROJECT_DIR$/module/Application/src/Controller/IndexController.php" />
         <option value="$PROJECT_DIR$/module/Cms/view/layout/login.phtml" />
-        <option value="$PROJECT_DIR$/module/Cms/view/cms/auth/autenticacao.phtml" />
         <option value="$PROJECT_DIR$/module/Cms/view/cms/auth/recuperar-senha.phtml" />
         <option value="$PROJECT_DIR$/module/Cms/view/cms/auth/validar-recuperar-senha.phtml" />
-        <option value="$PROJECT_DIR$/module/Cms/src/Controller/AuthController.php" />
         <option value="$PROJECT_DIR$/module/Cms/view/cms/auth/redefinir-senha.phtml" />
         <option value="$PROJECT_DIR$/public/css/cms.css" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/6941f680-da59-47e0-b436-86f4896e8ade/console.sql" />
@@ -209,17 +209,26 @@
         <option value="$PROJECT_DIR$/config/autoload/global.php" />
         <option value="$PROJECT_DIR$/module/Cms/src/Model/UsuarioTable.phtml" />
         <option value="$PROJECT_DIR$/module/Cms/src/Model/Usuario.phtml" />
-        <option value="$PROJECT_DIR$/module/Cms/src/Module.php" />
         <option value="$PROJECT_DIR$/module/Cms/src/Form/Usuario.php" />
         <option value="$PROJECT_DIR$/module/Cms/view/cms/usuario/form.phtml" />
-        <option value="$PROJECT_DIR$/module/Cms/view/layout/cms.phtml" />
         <option value="$PROJECT_DIR$/module/Cms/src/Model/Usuario.php" />
-        <option value="$PROJECT_DIR$/module/Cms/config/module.config.php" />
         <option value="$PROJECT_DIR$/module/Cms/src/Form/UsuarioForm.php" />
         <option value="$PROJECT_DIR$/public/js/crud.js" />
-        <option value="$PROJECT_DIR$/module/Cms/src/Model/UsuarioTable.php" />
         <option value="$PROJECT_DIR$/module/Cms/view/cms/usuario/index.phtml" />
         <option value="$PROJECT_DIR$/module/Cms/src/Controller/UsuarioController.php" />
+        <option value="$PROJECT_DIR$/module/Cms/src/AuthAdapter.php" />
+        <option value="$PROJECT_DIR$/module/Cms/src/Classe/AuthAdapter.php" />
+        <option value="$PROJECT_DIR$/module/Cms/src/Service/Factory/AuthControllerFactory.php" />
+        <option value="$PROJECT_DIR$/module/Cms/src/Controller/Factory/AuthControllerFactory.php" />
+        <option value="$PROJECT_DIR$/module/Cms/src/Model/UsuarioTable.php" />
+        <option value="$PROJECT_DIR$/module/Cms/src/Service/Factory/AuthenticationServiceFactory.php" />
+        <option value="$PROJECT_DIR$/module/Cms/view/layout/cms.phtml" />
+        <option value="$PROJECT_DIR$/module/Cms/config/module.config.php" />
+        <option value="$PROJECT_DIR$/module/Cms/src/Module.php" />
+        <option value="$PROJECT_DIR$/public/js/auth.js" />
+        <option value="$PROJECT_DIR$/module/Cms/view/cms/auth/autenticacao.phtml" />
+        <option value="$PROJECT_DIR$/module/Cms/view/layout/auth.phtml" />
+        <option value="$PROJECT_DIR$/module/Cms/src/Controller/AuthController.php" />
       </list>
     </option>
   </component>
@@ -337,7 +346,33 @@
             <path>
               <item name="teste-pratico-treinacon" type="b2602c69:ProjectViewProjectNode" />
               <item name="teste-pratico-treinacon" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="autoload" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="teste-pratico-treinacon" type="b2602c69:ProjectViewProjectNode" />
+              <item name="teste-pratico-treinacon" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="module" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="teste-pratico-treinacon" type="b2602c69:ProjectViewProjectNode" />
+              <item name="teste-pratico-treinacon" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="module" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Cms" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="teste-pratico-treinacon" type="b2602c69:ProjectViewProjectNode" />
+              <item name="teste-pratico-treinacon" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="module" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Cms" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="teste-pratico-treinacon" type="b2602c69:ProjectViewProjectNode" />
+              <item name="teste-pratico-treinacon" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="module" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Cms" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="teste-pratico-treinacon" type="b2602c69:ProjectViewProjectNode" />
@@ -361,20 +396,22 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="SearchEverywhereHistoryKey" value="index&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/view/cms/usuario/index.phtml&#10;crud&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/public/js/crud.js&#10;UsuarioFOr&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/src/Form/UsuarioForm.php&#10;UsuarioFo&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/src/Form/UsuarioForm.php&#10;UsuarioTab&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/src/Model/UsuarioTable.php&#10;UsuarioCon&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/src/Controller/UsuarioController.php&#10;cms.ph&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/view/layout/cms.phtml&#10;form&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/view/cms/usuario/form.phtml&#10;READ&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/README.md&#10;Usuario&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/src/Controller/UsuarioController.php&#10;AuthCon&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/src/Controller/AuthController.php&#10;composer.&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/composer.json" />
+    <property name="SearchEverywhereHistoryKey" value="auth.ph&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/view/layout/auth.phtml&#10;autentica&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/view/cms/auth/autenticacao.phtml&#10;modu&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/config/module.config.php&#10;Modu&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/src/Module.php&#10;cms&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/view/layout/cms.phtml&#10;modul&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/config/module.config.php&#10;Module&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/src/Module.php&#10;MOdu&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/src/Module.php&#10;Auth&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/src/Controller/AuthController.php&#10;index&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/view/cms/usuario/index.phtml&#10;crud&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/public/js/crud.js&#10;UsuarioFOr&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/src/Form/UsuarioForm.php&#10;UsuarioFo&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/src/Form/UsuarioForm.php&#10;UsuarioTab&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/src/Model/UsuarioTable.php&#10;UsuarioCon&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/src/Controller/UsuarioController.php&#10;cms.ph&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/view/layout/cms.phtml&#10;form&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/view/cms/usuario/form.phtml&#10;READ&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/README.md&#10;Usuario&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/src/Controller/UsuarioController.php&#10;AuthCon&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/module/Cms/src/Controller/AuthController.php&#10;composer.&#9;FILE&#9;file:///home/flavio/Projetos/estudos/teste-pratico-treinacon/composer.json" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/module/Cms/src/Controller/Factory" />
+      <recent name="$PROJECT_DIR$/module/Cms/src/Classe" />
       <recent name="$PROJECT_DIR$/module/Cms/src/Controller" />
       <recent name="$PROJECT_DIR$/module/Cms/view/cms" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/js" />
+      <recent name="$PROJECT_DIR$/module/Cms/src/Service/Factory" />
       <recent name="$PROJECT_DIR$/module/Cms/src/Model" />
       <recent name="$PROJECT_DIR$/public/css" />
       <recent name="$PROJECT_DIR$/module/Cms/view/layout" />
-      <recent name="$PROJECT_DIR$/module/Application/view/layout" />
-      <recent name="$PROJECT_DIR$/module/Cms/view" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -402,12 +439,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528505822233</updated>
-      <workItem from="1528505823658" duration="15989000" />
+      <workItem from="1528505823658" duration="22542000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15989000" />
+    <option name="totallyTimeSpent" value="22542000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
@@ -470,14 +507,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="28" column="32" lean-forward="false" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -588,34 +617,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Cms/view/layout/auth.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Cms/view/cms/auth/autenticacao.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="24" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module/Cms/view/cms/auth/recuperar-senha.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="1" column="40" lean-forward="false" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Cms/src/Controller/AuthController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="29" column="34" lean-forward="false" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -663,14 +668,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/autoload/global.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="16" column="68" lean-forward="true" selection-start-line="16" selection-start-column="68" selection-end-line="16" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/development.config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -684,24 +681,6 @@
         <state relative-caret-position="535">
           <caret line="73" column="20" lean-forward="false" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Cms/view/layout/cms.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="23" column="46" lean-forward="false" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Cms/src/Module.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="25" column="45" lean-forward="false" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
-          <folding>
-            <element signature="e#23#60#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -721,14 +700,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Cms/config/module.config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="67" column="46" lean-forward="false" selection-start-line="67" selection-start-column="46" selection-end-line="67" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/edd6395e/6941f680-da59-47e0-b436-86f4896e8ade/treinacon.usuario">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -744,18 +715,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Cms/src/Model/UsuarioTable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="49" column="19" lean-forward="false" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module/Cms/src/Form/UsuarioForm.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" column="33" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Cms/src/Controller/UsuarioController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="75" column="37" lean-forward="false" selection-start-line="75" selection-start-column="37" selection-end-line="75" selection-end-column="37" />
+          <folding>
+            <element signature="e#34#59#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="32" column="8" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/autoload/global.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="22" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -791,12 +780,109 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Cms/src/Controller/UsuarioController.php">
+    <entry file="file://$PROJECT_DIR$/module/Cms/src/Classe/AuthAdapter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="75" column="37" lean-forward="false" selection-start-line="75" selection-start-column="37" selection-end-line="75" selection-end-column="37" />
+        <state relative-caret-position="415">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding>
-            <element signature="e#34#59#0#PHP" expanded="true" />
+            <element signature="e#30#57#0#PHP" expanded="true" />
+            <marker date="1528525241847" expanded="true" signature="1013:1067" ph="SELECT * FRO... usuario" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Cms/src/Model/UsuarioTable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="23" column="67" lean-forward="false" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/password/password.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="183" column="41" lean-forward="false" selection-start-line="183" selection-start-column="41" selection-end-line="183" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Cms/config/module.config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Cms/src/Module.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <element signature="e#23#57#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Cms/src/Service/Factory/AuthenticationServiceFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="21" column="41" lean-forward="false" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+          <folding>
+            <element signature="e#39#66#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Cms/src/Controller/Factory/AuthControllerFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#42#76#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Cms/view/layout/cms.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="57" column="52" lean-forward="false" selection-start-line="57" selection-start-column="52" selection-end-line="57" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Cms/view/cms/auth/autenticacao.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="22" lean-forward="false" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="54" lean-forward="false" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Cms/view/layout/auth.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="19" column="49" lean-forward="false" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Cms/src/Controller/AuthController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="43" column="89" lean-forward="false" selection-start-line="43" selection-start-column="89" selection-end-line="43" selection-end-column="89" />
+          <folding>
+            <element signature="e#34#80#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
