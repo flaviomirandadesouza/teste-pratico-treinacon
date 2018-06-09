@@ -28,6 +28,7 @@
     "url": "https://github.com/BlackrockDigital/startbootstrap-sb-admin.git"
   },
   "dependencies": {
+    "popper.js": "^1.12.9",
     "bootstrap": "4.0.0",
     "chart.js": "2.7.1",
     "datatables.net-bs4": "1.10.16",
