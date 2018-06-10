@@ -56,13 +56,15 @@ return [
         'not_found_template'       => 'error/404',
         'exception_template'       => 'error/index',
         'template_map'             => [
-            'layout/layout'       => __DIR__ . '/../view/layout/cms.phtml',
-            'error/404'           => __DIR__ . '/../view/error/404.phtml',
-            'error/index'         => __DIR__ . '/../view/error/index.phtml'
+            'layout/layout' => __DIR__ . '/../view/layout/cms.phtml',
+            'error/404'     => __DIR__ . '/../view/error/404.phtml',
+            'error/index'   => __DIR__ . '/../view/error/index.phtml'
         ],
         'template_path_stack'      => [
             'cms' => __DIR__ . "/../view"
         ],
-        'excluir'                  => FALSE
+        'strategies' => array(
+            'ViewJsonStrategy',
+        )
     ]
 ];

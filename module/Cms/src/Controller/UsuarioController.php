@@ -7,6 +7,7 @@ use Cms\Form\UsuarioForm;
 use Cms\Model\Usuario;
 use Cms\Model\UsuarioTable;
 use Zend\Mvc\Controller\AbstractActionController;
+use Zend\View\Model\JsonModel;
 use Zend\View\Model\ViewModel;
 
 class UsuarioController extends AbstractActionController
@@ -27,11 +28,6 @@ class UsuarioController extends AbstractActionController
         $this->model = new Usuario();
     }
 
-    public function ajax()
-    {
-        $this->layout()->setTerminal(TRUE)->setTemplate('ajax/response');
-    }
-
     public function listagemAction()
     {
 
@@ -47,7 +43,7 @@ class UsuarioController extends AbstractActionController
     public function cadastrarAction()
     {
         if ($this->getRequest()->isPost()) {
-            $this->salvar();
+            return $this->salvar();
         } else {
             $this->view->setVariable('form', new UsuarioForm());
             $this->view->setTemplate('cms/usuario/form');
@@ -59,7 +55,7 @@ class UsuarioController extends AbstractActionController
     public function editarAction()
     {
         if ($this->getRequest()->isPost()) {
-            $this->salvar();
+            return $this->salvar();
         } else {
 
             $id = $this->params()->fromRoute('id');
@@ -110,11 +106,10 @@ class UsuarioController extends AbstractActionController
             $this->model->exchangeArray($this->getRequest()->getPost()->toArray());
             $this->validar();
             $this->table->salvar($this->model);
-            echo json_encode(['status' => TRUE, 'redirect' => '/usuario']);
+            return new JsonModel(['status' => TRUE, 'redirect' => '/usuario']);
         } catch (\Exception $e) {
-            echo json_encode(['status' => FALSE, 'msg' => $e->getMessage()]);
+            return new JsonModel(['status' => FALSE, 'msg' => $e->getMessage()]);
         }
-        die();
     }
 
     public function excluirAction()
@@ -126,10 +121,9 @@ class UsuarioController extends AbstractActionController
                 throw new \Exception('Você não pode excluir esse usuário!');
 
             $this->table->excluir($id);
-            echo json_encode(['status' => TRUE, 'redirect' => '/usuario']);
+            return new JsonModel(['status' => TRUE, 'redirect' => '/usuario']);
         } catch (\Exception $e) {
-            echo json_encode(['status' => FALSE, 'msg' => $e->getMessage()]);
+            return new JsonModel(['status' => FALSE, 'msg' => $e->getMessage()]);
         }
-        die();
     }
 }

@@ -7,6 +7,7 @@ use Zend\Authentication\Adapter\DbTable\CallbackCheckAdapter;
 use Zend\Authentication\AuthenticationServiceInterface;
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\Mvc\MvcEvent;
+use Zend\View\Model\JsonModel;
 use Zend\View\Model\ViewModel;
 
 class AuthController extends AbstractActionController
@@ -40,11 +41,10 @@ class AuthController extends AbstractActionController
 
             if ($result->isValid()) {
                 $this->flashMessenger()->addMessage('Seja bem vindo ao sistema!');
-                echo json_encode(['status' => TRUE, 'redirect' => '/usuario']);
+                return new JsonModel(['status' => TRUE, 'redirect' => '/usuario']);
             } else {
-                echo json_encode(['status' => FALSE, 'msg' => 'Usuário ou senha inválidos']);
+                return new JsonModel(['status' => FALSE, 'msg' => 'Usuário ou senha inválidos']);
             }
-            die();
         }
 
         return new ViewModel();
